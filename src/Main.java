@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        boolean loopJenisMhs = false;
+        boolean ulang = false;
         boolean loop = false;
         int pil, usia;
         double nilaiEsai,nilaiVisualisasi,nilaiDesign;
@@ -90,7 +90,7 @@ public class Main {
                     }
                 } while(loop == true);
 
-                loopJenisMhs = false;
+                ulang = false;
             } else if (pil == 2) {
                 System.out.println("\n");
                 System.out.println("+----------------------------+");
@@ -161,12 +161,11 @@ public class Main {
                     }
                 } while(loop == true);
 
-                loopJenisMhs = false;
+                ulang = false;
             } else {
                 System.out.println("Input yang anda masukkan salah, silakan masukkan kembali!");
-
-                loopJenisMhs = true;
+                ulang = true;
             }
-        } while (loopJenisMhs == true);
+        } while (ulang == true);
     }
 }
