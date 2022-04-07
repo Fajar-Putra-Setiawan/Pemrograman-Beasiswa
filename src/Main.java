@@ -36,13 +36,13 @@ public class Main {
                 System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                 System.out.println("\n");
                 System.out.print("Nilai Struktur dan Konten Esai : ");
-                double nilaiPelajar1 = input.nextDouble();
+                double nilaiEsai = input.nextDouble();
                 System.out.print("Nilai Teknik Visualisasi : ");
-                double nilaiPelajar2 = input.nextDouble();
+                double nilaiVisualisasi = input.nextDouble();
                 System.out.print("Nilai Kemampuan Design Thinking : ");
-                double nilaiPelajar3 = input.nextDouble();
+                double nilaiDesign = input.nextDouble();
 
-                Pelajar pelajar = new Pelajar(namaLengkap, (int) usia,nilaiPelajar1,nilaiPelajar2,nilaiPelajar3);
+                Pelajar pelajar = new Pelajar(namaLengkap, (int) usia,nilaiEsai,nilaiVisualisasi,nilaiDesign);
 
                 System.out.println("\n");
                 System.out.println("+------------------------+");
@@ -107,13 +107,13 @@ public class Main {
                 System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                 System.out.println("\n");
                 System.out.print("Nilai Struktur dan Konten Jurnal : ");
-                double nilaiMhs1 = input.nextDouble();
+                double nilaiJurnal = input.nextDouble();
                 System.out.print("Nilai Relevansi Data : ");
-                double nilaiMhs2 = input.nextDouble();
+                double nilaiRelevasi = input.nextDouble();
                 System.out.print("Nilai Kemampuan Problem Solving : ");
-                double nilaiMhs3 = input.nextDouble();
+                double nilaiProblem = input.nextDouble();
 
-                Mahasiswa mahasiswa = new Mahasiswa(namaLengkap, (int) usia,nilaiMhs1,nilaiMhs2,nilaiMhs3);
+                Mahasiswa mahasiswa = new Mahasiswa(namaLengkap, (int) usia,nilaiJurnal,nilaiRelevasi,nilaiProblem);
 
                 System.out.println("\n");
                 System.out.println("+---------------------------+");
