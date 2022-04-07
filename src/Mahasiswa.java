@@ -13,7 +13,7 @@ public class Mahasiswa implements BeasiswaMahasiswa{
         this.nilai3 = nilai3;
     }
 
-    public void setNilaiMhs(double nilai1, double nilai2, double nilai3) {
+    public void totalNilai(double nilai1, double nilai2, double nilai3) {
         this.nilai1 = nilai1;
         this.nilai1 = nilai1;
         this.nilai1 = nilai1;

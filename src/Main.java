@@ -43,7 +43,7 @@ public class Main {
                 double nilaiDesign = input.nextDouble();
 
                 Pelajar pelajar = new Pelajar(namaLengkap, (int) usia,nilaiEsai,nilaiVisualisasi,nilaiDesign);
-
+                do {
                 System.out.println("\n");
                 System.out.println("+------------------------+");
                 System.out.println("|           MENU         |");
@@ -55,15 +55,15 @@ public class Main {
                 System.out.print("Pilih: ");
                 double pilih = input.nextDouble();
 
-                do {
+
                     if(pilih == 1) {
                         pelajar.display();
                         loop = false;
                     } else if (pilih == 2) {
                         System.out.println("\n");
-                        System.out.println("+------+");
-                        System.out.println("| EDIT |");
-                        System.out.println("+------+");
+                        System.out.println("+----------------+");
+                        System.out.println("|       EDIT     |");
+                        System.out.println("+----------------+");
                         System.out.println("\n");
 
                         System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
@@ -75,9 +75,9 @@ public class Main {
                         System.out.print("Nilai Kemampuan Design Thinking : ");
                         double tempPelajar3 = input.nextDouble();
 
-                        pelajar.setNilaiPelajar(tempPelajar1,tempPelajar2,tempPelajar3);
+                        pelajar.totalNilai(tempPelajar1,tempPelajar2,tempPelajar3);
 
-                        loop = false;
+                        loop = true;
                     } else if (pilih == 3) {
                         System.exit(0);
                     } else {
@@ -147,7 +147,7 @@ public class Main {
                         System.out.print("Nilai Kemampuan Design Thinking : ");
                         double tempNilai3 = input.nextDouble();
 
-                        mahasiswa.setNilaiMhs(tempNilai1,tempNilai2,tempNilai3);
+                        mahasiswa.totalNilai(tempNilai1,tempNilai2,tempNilai3);
 
                         loop = false;
                     } else if (pilih == 3) {
