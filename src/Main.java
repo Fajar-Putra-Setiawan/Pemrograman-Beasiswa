@@ -16,7 +16,7 @@ public class Main {
         System.out.println("Terdapat 2 program beasiswa yang dibuka: ");
         System.out.println("1. Beasiswa Pelajar");
         System.out.println("2. Beasiswa Mahasiswa");
-        System.out.println("Pilih beasiswa yang ingin didaftar: ");
+        System.out.print("Pilih beasiswa yang ingin didaftar: ");
         pil = input.nextInt();
 
         do {
@@ -38,11 +38,11 @@ public class Main {
                 System.out.print("\n");
                 System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                 System.out.println("\n");
-                System.out.println("Nilai Struktur dan Konten Esai : ");
+                System.out.print("Nilai Struktur dan Konten Esai : ");
                 nilaiEsai = input.nextDouble();
-                System.out.println("Nilai Teknik Visualisasi : ");
+                System.out.print("Nilai Teknik Visualisasi : ");
                 nilaiVisualisasi = input.nextDouble();
-                System.out.println("Nilai Kemampuan Design Thinking : ");
+                System.out.print("Nilai Kemampuan Design Thinking : ");
                 nilaiDesign = input.nextDouble();
 
                 Pelajar pelajar = new Pelajar(namaLengkap, (int) usia,nilaiEsai,nilaiVisualisasi,nilaiDesign);
@@ -55,7 +55,7 @@ public class Main {
                 System.out.println("\t1. Tampilkan Hasil");
                 System.out.println("\t2. Ubah Nilai");
                 System.out.println("\t3. Keluar");
-                System.out.println("Pilih: ");
+                System.out.print("Pilih: ");
                 double pilih = input.nextDouble();
 
                 do {
@@ -72,11 +72,11 @@ public class Main {
 
                         System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                         System.out.println("\n");
-                        System.out.println("Nilai Struktur dan Konten Esai : ");
+                        System.out.print("Nilai Struktur dan Konten Esai : ");
                         nilaiEsai = input.nextDouble();
-                        System.out.println("Nilai Teknik Visualisasi : ");
+                        System.out.print("Nilai Teknik Visualisasi : ");
                         nilaiVisualisasi = input.nextDouble();
-                        System.out.println("Nilai Kemampuan Design Thinking : ");
+                        System.out.print("Nilai Kemampuan Design Thinking : ");
                         nilaiDesign = input.nextDouble();
 
                         pelajar.totalNilai(nilaiEsai,nilaiVisualisasi,nilaiDesign);
@@ -97,9 +97,9 @@ public class Main {
                 System.out.println("| FORM PENDAFTARAN MAHASISWA |");
                 System.out.println("+----------------------------+");
                 System.out.print("\n");
-                System.out.println("Nama Lengkap\t: ");
+                System.out.print("Nama Lengkap\t: ");
                 String namaLengkap = input.next();
-                System.out.println("Usia\t: ");
+                System.out.print("Usia\t: ");
                 usia = input.nextInt();
 
                 System.out.println("\n");
@@ -109,11 +109,11 @@ public class Main {
                 System.out.print("\n");
                 System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                 System.out.println("\n");
-                System.out.println("Nilai Struktur dan Konten Jurnal : ");
+                System.out.print("Nilai Struktur dan Konten Jurnal : ");
                 nilaiJurnal = input.nextDouble();
-                System.out.println("Nilai Relevansi Data : ");
+                System.out.print("Nilai Relevansi Data : ");
                 nilaiData = input.nextDouble();
-                System.out.println("Nilai Kemampuan Problem Solving : ");
+                System.out.print("Nilai Kemampuan Problem Solving : ");
                 nilaiProblem = input.nextDouble();
 
                 Mahasiswa mahasiswa = new Mahasiswa(namaLengkap,usia,nilaiJurnal,nilaiData,nilaiProblem);
@@ -126,7 +126,7 @@ public class Main {
                 System.out.println("\t1. Tampilkan Hasil");
                 System.out.println("\t2. Ubah Nilai");
                 System.out.println("\t3. Keluar");
-                System.out.println("Pilih: ");
+                System.out.print("Pilih: ");
                 double pilih = input.nextDouble();
 
                 do {
@@ -143,11 +143,12 @@ public class Main {
 
                         System.out.println("Keterangan: Nilai yang valid berada diantara 0 - 100");
                         System.out.println("\n");
-                        System.out.println("Nilai Struktur dan Konten Jurnal : ");
+                        System.out.print("Nilai Struktur dan Konten Jurnal : ");
                         nilaiJurnal = input.nextDouble();
-                        System.out.println("Nilai Relevansi Data : ");
+                        System.out.print("Nilai Relevansi Data : ");
                         nilaiData = input.nextDouble();
-                        System.out.println("Nilai Kemampuan Problem Solving : ");
+                        System.out.print("Nilai Kemampuan Problem Solving : ");
+                        System.out.print("Nilai Kemampuan Problem Solving : ");
                         nilaiProblem = input.nextDouble();
 
                         mahasiswa.totalNilai(nilaiJurnal,nilaiData,nilaiProblem);
